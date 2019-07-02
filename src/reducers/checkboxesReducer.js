@@ -1,7 +1,8 @@
 import { OBJECT_CHECKBOX_CHANGED } from "../constants/actionTypes";
 
 const initialState = {
-  checkboxes: [
+  name: 'skills',
+  obj: [
     {
       text: '',
       isChecked: false
@@ -15,7 +16,7 @@ export const checkboxesReducer = (state = initialState, action) => {
       case OBJECT_CHECKBOX_CHANGED:
         return {
           ...state,
-          checkboxes: []
+          obj: []
         }
       default:
         return state

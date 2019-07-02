@@ -1,7 +1,8 @@
 import { OBJECT_RANGE_CHANGED } from "../constants/actionTypes";
 
 const initialState = {
-  radioRange: [
+  name: 'knowledge',
+  obj: [
     {
       text: '',
       isChecked: false
@@ -15,7 +16,7 @@ export const rangeReducer = (state = initialState, action) => {
       case OBJECT_RANGE_CHANGED:
         return {
           ...state,
-          radioRange: []
+          obj: []
         }
       default:
         return state

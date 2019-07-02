@@ -1,7 +1,8 @@
 import { OBJECT_TEXTAREA_CHANGED } from "../constants/actionTypes";
 
 const initialState = {
-  textArea: {
+  name: 'text',
+  obj: {
     text: ''
   }
 };
@@ -12,7 +13,7 @@ export const textareaReducer = (state = initialState, action) => {
       case OBJECT_TEXTAREA_CHANGED:
         return {
           ...state,
-          textArea: {}
+          obj: {}
         }
       default:
         return state

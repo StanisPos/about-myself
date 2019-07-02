@@ -1,7 +1,8 @@
 import { OBJECT_RADIOBUTTON_CHANGED } from "../constants/actionTypes";
 
 const initialState = {
-  radioButtons: {
+  name: 'plans',
+  obj: {
     name: '',
     birthDate: '',
     location: '',
@@ -16,7 +17,7 @@ export const radioButtonsReducer = (state = initialState, action) => {
       case OBJECT_RADIOBUTTON_CHANGED:
         return {
           ...state,
-          radioButtons: {}
+          obj: {}
         }
       default:
         return state

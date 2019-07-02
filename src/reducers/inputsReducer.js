@@ -1,7 +1,8 @@
 import { OBJECT_INPUT_CHANGED } from "../constants/actionTypes";
 
 const initialState = {
-  inputObject: {
+  name: 'contacts',
+  obj: {
     name: '',
     birthDate: '',
     location: '',
@@ -16,7 +17,7 @@ export const inputsRedicer = (state = initialState, action) => {
       case OBJECT_INPUT_CHANGED:
         return {
           ...state,
-          inputObject: {}
+          obj: {}
         }
       default:
         return state
