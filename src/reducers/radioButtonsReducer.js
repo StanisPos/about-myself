@@ -1,14 +1,29 @@
 import { OBJECT_RADIOBUTTON_CHANGED } from "../constants/actionTypes";
 
 const initialState = {
-  name: 'plans',
-  obj: {
-    name: '',
-    birthDate: '',
-    location: '',
-    skype: '',
-    email: ''
-  }
+  name: "plans",
+  obj: [
+    {
+      value: "layout",
+      text: "Верстать",
+      isChecked: true
+    },
+    {
+      value: "programming",
+      text: "Прокачиваться в JS",
+      isChecked: false
+    },
+    {
+      value: "management",
+      text: "Менеджерство",
+      isChecked: false
+    },
+    {
+      value: "other",
+      text: "Другое",
+      isChecked: false
+    }
+  ]
 };
 
 export const radioButtonsReducer = (state = initialState, action) => {
@@ -18,9 +33,9 @@ export const radioButtonsReducer = (state = initialState, action) => {
         return {
           ...state,
           obj: {}
-        }
+        };
       default:
-        return state
+        return state;
     }
   }
 };

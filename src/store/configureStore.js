@@ -1,4 +1,4 @@
-import { createStore, applyMiddleware } from "C:/Users/stanislav/AppData/Local/Microsoft/TypeScript/3.5/node_modules/redux";
+import { createStore, applyMiddleware } from "redux";
 import { rootReducer } from "../reducers/rootReducer";
 import thunk from "redux-thunk";
 import logger from "redux-logger";

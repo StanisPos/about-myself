@@ -1,4 +1,4 @@
-import { combineReducers } from "C:/Users/stanislav/AppData/Local/Microsoft/TypeScript/3.5/node_modules/redux";
+import { combineReducers } from "redux";
 import { inputsRedicer } from "./inputsReducer";
 import { checkboxesReducer } from "./checkboxesReducer";
 import { rangeReducer } from "./rangeReducer";

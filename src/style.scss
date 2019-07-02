@@ -1,2 +1,7 @@
-@import "./assets/styles/normalize.scss",
-          "./assets/styles/base.scss";
+@import "./assets/styles/base/normalize.scss",
+          "./assets/styles/base/common.scss";
+
+@import "./assets/styles/layout/wrapper.scss";
+
+@import "./components/Header/style.scss",
+          "./components/Header/style.scss"
